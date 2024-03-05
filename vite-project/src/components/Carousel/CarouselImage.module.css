@@ -1,8 +1,30 @@
 .wraper{
-    color:red
+ 
+    margin-top: 2rem;
+
+}
+
+.wraper p {
+    color:rgb(3, 29, 11);
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .img img{
     width: 300px;
     height: 300px;
+}
+
+
+.buttons	{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+}
+
+.buttons button{
+    width: 100px;
+    background-color: rgba(138, 165, 42, 0.685);
 }

@@ -1,8 +1,10 @@
 export const productPosts =()=>{
     return[
       {
+        id:'1',
         content:'это контент',
-        title:'это тайтл'
+        title:'это тайтл',
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor facilisis neque, vitae molestie justo ultricies sit amet. Duis vel hendrerit nisi"
       }
    
     ]
@@ -42,7 +44,7 @@ export const productPosts =()=>{
 
 
   export const handleSubmit = (formData) => {
-    console.log('Form data submitted:', formData);
+    console.log('Отправленные данные:', formData);
   };
   
 
@@ -72,6 +74,10 @@ export const productPosts =()=>{
     {
       id: '5',
       imgUrl: '../../src/assets/css.svg'
+    },
+    {
+      id: '6',
+      imgUrl: '../../src/assets/asd.svg'
     }
   ];
   
@@ -85,7 +91,7 @@ export const productPosts =()=>{
     } else {
       currentIndex = newIndex;
     }
-  
-    console.log('Setting current index to:', currentIndex);
  
   };
+
+ 

@@ -17,6 +17,7 @@ const LoginForm = ({ onSubmit }) => {
   
     return (
       <div className={style.wraper}>
+   
       <form onSubmit={handleSubmit} className={style.form}>
      
        
@@ -27,7 +28,7 @@ const LoginForm = ({ onSubmit }) => {
           <input type="email" name="email" placeholder="Email" required />
     
       
-        
+       
           <input type="password" name="password" placeholder="Password" required />
        
         <button type="submit">Register</button>

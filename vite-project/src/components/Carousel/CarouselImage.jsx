@@ -1,7 +1,9 @@
 import React from 'react';
 import style from "./CarouselImage.module.css";
 
-const CarouselImage = ({ images }) => {
+
+const CarouselImage = ({ images}) => {
+ 
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
   const nextImage = () => {
@@ -13,17 +15,24 @@ const CarouselImage = ({ images }) => {
   };
 
   if (images.length === 0) {
-    return <div>No images to display</div>;
+    return <div>Нет изображений для отображения</div>;
   }
 
   return (
     <div className={style.wraper}>
+   
     <div className={style.img}>
+    
       <img src={images[currentIndex].imgUrl} alt={`Image ${currentIndex + 1}`} />
       </div>
+      
+      <p>{currentIndex}</p>
+      <div className={style.buttons}>
       <button onClick={prevImage}>Previous</button>
       <button onClick={nextImage}>Next</button>
-      <p>{currentIndex}</p>
+      </div>
+      
+
     </div>
   );
 };
