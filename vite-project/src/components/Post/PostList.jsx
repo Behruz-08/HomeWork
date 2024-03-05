@@ -1,9 +1,17 @@
+import style from "./PostList.module.css";
 
-import style from "./PostList.module.css"
-const PostList = () => {
+
+const PostList = ({ getPosts }) => {
   return (
-    <div className={style.wraper}>PostList</div>
-  )
+    <div className={style.wrapper}>
+      {getPosts.map((post, index) => (
+        <div key={index}>
+          <h2>{post.title}</h2>
+          <p>{post.content}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
-export default PostList
+export default PostList;
