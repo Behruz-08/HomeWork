@@ -2,9 +2,13 @@ import React from 'react';
 import style from "./CarouselImage.module.css";
 
 
+
+
+
 const CarouselImage = ({ images}) => {
  
   const [currentIndex, setCurrentIndex] = React.useState(0);
+
 
   const nextImage = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
@@ -17,6 +21,8 @@ const CarouselImage = ({ images}) => {
   if (images.length === 0) {
     return <div>Нет изображений для отображения</div>;
   }
+// console.log(currentIndex);
+  
 
   return (
     <div className={style.wraper}>
@@ -35,6 +41,8 @@ const CarouselImage = ({ images}) => {
 
     </div>
   );
+
+  
 };
 
 export default CarouselImage;
