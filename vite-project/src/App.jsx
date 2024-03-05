@@ -5,7 +5,9 @@ import LoginForm from './components/Logins/LoginForm'
 import PostList from './components/Post/PostList'
 import ProductsCard from './components/Products/ProductsCard'
 
-import { getPosts, getProducts, handleSubmit, setCurrentIndex, images, currentIndex } from './utils/Util'
+import { getPosts, getProducts, handleSubmit,  images, currentIndex , setCurrentIndex } from './utils/Util'
+
+
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
     <>
     <PostList getPosts={getPosts} />
     <ProductsCard  productsInfo={getProducts}/>
+    <div className='card-bottom'>
     <LoginForm onSubmit={handleSubmit}/>
     <CarouselImage images={images} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+    </div>
     </>
   )
 }
