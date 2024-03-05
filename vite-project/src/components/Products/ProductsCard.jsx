@@ -1,27 +1,12 @@
 
-// import style from "./ProductsCard.module.css"
-// const ProductsCard = ({getProducts}) => {
-//   return (
-//     <div className={style.wraper}>
-//       {getProducts.map((getProduct)=>(
-//         <div key={getProduct.id}>
-//           <h3>{getProduct.id}</h3>
-//           <h5>{getProduct.info}</h5>
-//           <p>{getProduct.price}</p>
-//         </div>
-//       ))}
-//     </div>
-//   )
-// }
 
-// export default ProductsCard
 
 import style from "./ProductsCard.module.css"
 
-const ProductsCard = ({ productInfo }) => {
+const ProductsCard = ({ productsInfo }) => {
   return (
     <div className={style.wraper}>
-      {productInfo.map((product) => (
+      {productsInfo.map((product) => (
         <div className={style.cards} key={product.id}>
         <div className={style.card}>
 
