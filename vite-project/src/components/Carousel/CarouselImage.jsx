@@ -18,9 +18,12 @@ const CarouselImage = ({ images }) => {
 
   return (
     <div className={style.wraper}>
+    <div className={style.img}>
       <img src={images[currentIndex].imgUrl} alt={`Image ${currentIndex + 1}`} />
+      </div>
       <button onClick={prevImage}>Previous</button>
       <button onClick={nextImage}>Next</button>
+      <p>{currentIndex}</p>
     </div>
   );
 };
