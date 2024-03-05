@@ -31,6 +31,8 @@ export const productPosts =()=>{
   }
   
   export const getProducts=productsInfo()
+
+  
   
  export const handleSubmit = (formData) => {
     console.log('Form data submitted:', formData);
@@ -40,23 +42,23 @@ export const productPosts =()=>{
  export const images = [
     {
       id: '1',
-      imgUrl: ''
+      imgUrl: '../../src/assets/html.webp'
     },
     {
       id: '2',
-      imgUrl: ''
+      imgUrl: '../../src/assets/js.webp'
     },
     {
       id: '3',
-      imgUrl: ''
+      imgUrl: '../../src/assets/react.svg'
     },
     {
       id: '4',
-      imgUrl: ''
+      imgUrl: '../../src/assets/redux.png'
     },
     {
       id: '5',
-      imgUrl: ''
+      imgUrl: '../../src/assets/css.svg'
     }
   ];
   
