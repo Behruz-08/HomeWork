@@ -19,18 +19,23 @@ export const productPosts =()=>{
     return[
       {
         id:1,
-        info:"чёрная краска",
-        price:'200c'
+        info:"Зелённая краска",
+        price:'200c',
+        imgUrl:"../../src/assets/Green_paint.webp"
       },
       {
         id:2,
-        info:",белая краска",
-        price:'300c'
+        info:"Белая краска",
+        price:'300c',
+        imgUrl:"../../src/assets/Paint_white.png"
+
       },
       {
         id:3,
-        info:"жёлтая краска",
-        price:'400c'
+        info:"Жёлтая краска",
+        price:'400c',
+        imgUrl:"../../src/assets/paint_yellow.png"
+
       }
    
     ]
