@@ -1,3 +1,31 @@
-.wraper{
-    color:chocolate
+.wraper {
+
+}
+
+.form {
+    margin-top: 1rem;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.wraper button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(60, 60, 179);
+    
+}
+
+.form button{
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.wraper input{
+    width: 250px;
+    height: 50px;
 }

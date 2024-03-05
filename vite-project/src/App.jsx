@@ -5,52 +5,17 @@ import LoginForm from './components/Logins/LoginForm'
 import PostList from './components/Post/PostList'
 import ProductsCard from './components/Products/ProductsCard'
 
-const productPosts =()=>{
-  return[
-    {
-      content:'это контент',
-      title:'это тайтл'
-    }
- 
-  ]
-}
-const getPosts = productPosts();
-
-const productsInfo =()=>{
-  return[
-    {
-      id:1,
-      info:"чёрная краска",
-      price:'200c'
-    },
-    {
-      id:2,
-      info:",белая краска",
-      price:'300c'
-    },
-    {
-      id:3,
-      info:"жёлтая краска",
-      price:'400c'
-    }
- 
-  ]
-}
-
-const getProducts=productsInfo()
-
+import { getPosts, getProducts, handleSubmit, setCurrentIndex, images, currentIndex } from './utils/Util'
 
 function App() {
 
 
-  
-
   return (
     <>
     <PostList getPosts={getPosts} />
-    <ProductsCard  productInfo={getProducts}/>
-    <LoginForm/>
-    <CarouselImage/>
+    <ProductsCard  productsInfo={getProducts}/>
+    <LoginForm onSubmit={handleSubmit}/>
+    <CarouselImage images={images} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
     </>
   )
 }
