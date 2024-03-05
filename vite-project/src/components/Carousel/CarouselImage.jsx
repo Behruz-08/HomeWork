@@ -33,33 +33,9 @@ export default CarouselImage;
 
 
 
-// import style from "./CarouselImage.module.css"
 
-// const CarouselImage = ({ images, currentIndex, setCurrentIndex }) => {
-
-  
-
-
-//     const nextImage = () => {
-//         setCurrentIndex((currentIndex + 1) % images.length);
-//     };
-
-//     const prevImage = () => {
-//         setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-//     };
 
    
 
 
 
-
-//   return (
-//     <div className={style.wraper}>
-//       <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
-//             <button onClick={prevImage}>Previous</button>
-//             <button onClick={nextImage}>Next</button>
-//     </div>
-//   )
-// }
-
-// export default CarouselImage

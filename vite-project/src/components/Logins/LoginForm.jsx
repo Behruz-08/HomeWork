@@ -2,8 +2,6 @@
 import style from "./LoginForm.module.css"
 
 
-
-
 const LoginForm = ({ onSubmit }) => {
 
  

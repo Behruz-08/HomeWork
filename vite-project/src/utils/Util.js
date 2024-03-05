@@ -8,7 +8,11 @@ export const productPosts =()=>{
     ]
   }
  export const getPosts = productPosts();
+
+ /*=======================================PostList====================================================================*/ 
   
+
+
  export const productsInfo =()=>{
     return[
       {
@@ -32,13 +36,22 @@ export const productPosts =()=>{
   
   export const getProducts=productsInfo()
 
-  
-  
- export const handleSubmit = (formData) => {
+   /*=======================================Productsard====================================================================*/ 
+
+
+
+
+  export const handleSubmit = (formData) => {
     console.log('Form data submitted:', formData);
   };
   
+
   
+   /*=======================================Carousel====================================================================*/ 
+ 
+  
+
+   
  export const images = [
     {
       id: '1',
@@ -74,5 +87,5 @@ export const productPosts =()=>{
     }
   
     console.log('Setting current index to:', currentIndex);
-    // Дополнительная логика обновления текущего индекса
+ 
   };
