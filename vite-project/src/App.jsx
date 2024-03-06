@@ -5,7 +5,7 @@ import LoginForm from './components/Logins/LoginForm'
 import PostList from './components/Post/PostList'
 import ProductsCard from './components/Products/ProductsCard'
 
-import { getPosts, getProducts, handleSubmit,  images,currentIndex,setCurrentIndex  } from './utils/Util'
+import { getPosts, getProducts, handleSubmit,  images, currentIndex, setCurrentIndex } from './utils/Util'
 
 
 
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <PostList getPosts={getPosts} />
+    <PostList getPosts={getPosts}/>
     <ProductsCard  productsInfo={getProducts}/>
     <div className='card-bottom'>
     <LoginForm onSubmit={handleSubmit}/>

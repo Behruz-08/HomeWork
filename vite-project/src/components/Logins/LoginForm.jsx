@@ -9,8 +9,9 @@ const LoginForm = ({ onSubmit }) => {
       event.preventDefault();
       const formData = new FormData(event.target);
       const data = Object.fromEntries(formData.entries());
-  
+   
       onSubmit(data);
+     
     };
 
   
@@ -32,6 +33,7 @@ const LoginForm = ({ onSubmit }) => {
           <input type="password" name="password" placeholder="Password" required />
        
         <button type="submit">Register</button>
+
       </form>
       </div>
     );
