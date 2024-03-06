@@ -5,10 +5,10 @@ const PostList = ({ getPosts }) => {
   return (
     <div className={style.wrapper}>
    
-      {getPosts.map((post, index) => (
-        <div className={style.item} key={index}>
-          <h2>{post.title}</h2>
-          <p>{post.content}</p>
+      {getPosts.map((getPost) => (
+        <div className={style.item} key={getPost.id}>
+          <h2>{getPost.title}</h2>
+          <p>{getPost.content}</p>
       
         </div>
       ))}
